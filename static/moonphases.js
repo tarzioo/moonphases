@@ -33,6 +33,8 @@ function setPhase(phase) {
 };
 
 
+$('#show-all-phases').click(function() {
+
 var phases = ["firstQuarter", "waxingCrescent", "new", "waningCrescent", "thirdQuarter", "waningGibbous", "full", "waxingGibbous"];
  
 
@@ -44,4 +46,4 @@ for(var start = 0; start < phases.length; start++) {
   })(start);
 }
 
-
+});
