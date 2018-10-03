@@ -1,3 +1,5 @@
+"use strict";
+
 var dict = {
     new: "0px",
     full: "0px",
@@ -25,7 +27,6 @@ function setPhase(phase) {
         $(".shadow").css({"right": dict[phase], "box-shadow": "inset -60px -10px 10px 10px rgba(0, 0, 0, 0.90)", "background-color": "rgba(0, 0, 0, 0)", "width": "320px"});
     
     }
-    
         else if(phase === "full"){
         $(".shadow").css({"right": dict[phase], "box-shadow": "none", "background-color": "rgba(0, 0, 0, 0)", "border-radius": "50%", "width": "300px"});
     
@@ -33,7 +34,6 @@ function setPhase(phase) {
     else {
         $(".shadow").css({"right": dict[phase], "border-radius": "50%", "height": "300px", "background-color": "rgba(0, 0, 0, 0.90)", "box-shadow": "none" , "width": "300px"});
     }
-    
     
 };
 
@@ -52,3 +52,5 @@ for(var start = 0; start < phases.length; start++) {
 }
 
 });
+
+
